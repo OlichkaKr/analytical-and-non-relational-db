@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="InsertData.sql"
+  DTS:DTSID="{E779BB54-7D42-4494-983F-AB43585D8F67}"
+  DTS:CreationName="MULTIFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="D:\University\HomeStudy\Аналітичні та НБД\lab3\InsertData.sql|D:\University\HomeStudy\Аналітичні та НБД\lab3\nulplabsdb.sql" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

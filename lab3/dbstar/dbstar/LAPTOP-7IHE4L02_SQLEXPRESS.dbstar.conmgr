@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LAPTOP-7IHE4L02_SQLEXPRESS.dbstar"
+  DTS:DTSID="{6EA15819-73CC-4DD6-AE7A-4E6CAC5A8ACE}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=LAPTOP-7IHE4L02\SQLEXPRESS;Initial Catalog=dbstar;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
