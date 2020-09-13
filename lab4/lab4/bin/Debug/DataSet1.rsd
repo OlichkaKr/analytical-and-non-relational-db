@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>SELECT Popularity.comment_id, Popularity.user_id, Popularity.website_id, Popularity.block_id, Popularity.visitors, [User].first_name, [User].last_name, [User].public_display_name, [User].about_me, [User].profile_link, [User].email, [User].password, Websites.title, Comment.body, Comment.timestamp, ContentBlock.image, ContentBlock.text 
+FROM Popularity INNER JOIN
+                  [User] ON Popularity.user_id = [User].id INNER JOIN
+                  Websites ON Popularity.website_id = Websites.id INNER JOIN
+                  Comment ON Popularity.comment_id = Comment.id INNER JOIN
+                  ContentBlock ON Popularity.block_id = ContentBlock.id INNER JOIN
+                  Popularity AS Popularity_1 ON [User].id = Popularity.user_id AND Websites.id = Popularity.website_id AND Comment.id = Popularity.comment_id AND ContentBlock.id = Popularity.block_id</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="comment_id">
+        <DataField>comment_id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="user_id">
+        <DataField>user_id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="website_id">
+        <DataField>website_id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="block_id">
+        <DataField>block_id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="visitors">
+        <DataField>visitors</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="first_name">
+        <DataField>first_name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="last_name">
+        <DataField>last_name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="public_display_name">
+        <DataField>public_display_name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="about_me">
+        <DataField>about_me</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="profile_link">
+        <DataField>profile_link</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="email">
+        <DataField>email</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="password">
+        <DataField>password</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="title">
+        <DataField>title</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="body">
+        <DataField>body</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="timestamp">
+        <DataField>timestamp</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="image">
+        <DataField>image</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="text">
+        <DataField>text</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
